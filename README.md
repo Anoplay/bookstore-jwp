@@ -1,59 +1,34 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 Aplikasi BookStore (Ujian Kompetensi BNSP)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi e-commerce Toko Buku berbasis Web yang dibangun menggunakan **Laravel 11** dan **Bootstrap 5**. Proyek ini dibuat secara khusus untuk memenuhi persyaratan Uji Kompetensi Keahlian (UKK) Badan Nasional Sertifikasi Profesi (BNSP) Skema Junior Web Developer.
 
-## About Laravel
+## ✨ Fitur Utama (Berdasarkan Panduan Asesor)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Sistem ini memiliki **2 Hak Akses (Role)** yaitu Admin dan User, dengan pembagian tugas sebagai berikut:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🛡️ Fitur Admin (Panel Administrator)
+1. **Dashboard Statistik**: Memonitor total buku, pengguna, dan pesanan secara *real-time*.
+2. **Kelola Kategori Buku (CRUD)**: Menambah, mengubah, dan menghapus kategori buku.
+3. **Kelola Data Buku (CRUD)**: Manajemen katalog buku lengkap dengan unggah gambar (*upload image*), harga, dan stok.
+4. **List User Terdaftar**: Menampilkan daftar pengguna yang telah teregistrasi di dalam sistem.
+5. **Manajemen Pesanan (List Pesanan)**: Melihat daftar riwayat pesanan dari berbagai user.
+6. **Update Status Pengiriman**: Mengubah alur pengiriman pesanan (*Menunggu Konfirmasi -> Diproses -> Dikirim -> Selesai*). Terdapat juga fitur **Pembatalan Pesanan** yang terintegrasi dengan pengembalian stok barang secara otomatis.
+7. **Pesan Masuk (Inbox)**: Membaca pesan/kontak yang dikirimkan oleh pengunjung website.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 👤 Fitur User (Pelanggan)
+1. **Registrasi & Login**: Sistem autentikasi pengguna yang aman.
+2. **Katalog & Pencarian Buku**: Mencari buku berdasarkan judul/kategori.
+3. **Halaman About Us**: Informasi detail mengenai visi dan misi toko buku.
+4. **Contact to Admin**: Formulir pengiriman pesan langsung ke kotak masuk Admin.
+5. **Add to Cart (Keranjang Belanja)**: Fitur keranjang dinamis dengan kemampuan modifikasi *quantity* sebelum *checkout*.
+6. **Checkout (Payment at Delivery)**: Proses pemesanan buku dengan metode pembayaran *Payment at Delivery* (Bayar di tempat).
+7. **Tracking Status Pengiriman**: Memantau status pesanan (Apakah sudah diproses/dikirim oleh Admin).
 
-## Learning Laravel
+## 🛠️ Teknologi yang Digunakan
+- **Framework Backend**: Laravel 11 (PHP 8.x)
+- **Framework Frontend**: Bootstrap 5 (HTML5, CSS3)
+- **Database**: MySQL (phpMyAdmin)
+- **Arsitektur**: MVC (Model-View-Controller)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+*Didevelop untuk keperluan sertifikasi kompetensi profesi.*
